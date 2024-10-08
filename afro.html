@@ -1,41 +1,81 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ro">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Afro-Beauty</title>
+    <title>Salon de Înfrumusețare</title>
     <link rel="stylesheet" href="afrob.css">
 </head>
 <body>
-    <h2>Salon de Infrumusetare</h2> <br>
-    <h1><strong>Afro-Beauty</strong></h1>
-     <div>
-        <ul>
-            <li><a href="default.html">Home</a></li>
-            <li><a href="news.asp">News</a></li> 
-            <li><a href="https://www.facebook.com/people/Afro-beauty/100069693105498/?sk=about" title="Acceseaza pagina de facebook">Contact</a></li>
-            <li><a href="https://www.facebook.com/profile.php?id=100069693105498&sk=photos_by" class="poze-site" title="Acceseaza pagina de facebook">Galerie Foto</a></li>
-        </ul>
-        <main class="ListaText">
-            <p>Pentru rezervari acceseaza pagina noastra de <a href="https://www.facebook.com/profile.php?id=100069693105498" title="Acceseaza pagina de facebook">facebook</a> sau de <a href="" title="Acceseaza pagina de Instagram">Instagramm</a>.Pentru mai multe informatii va rugam sa ne contactati telefonic,sau lasati un mesaj pe pagina noastra de facebook.</p>
-             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit fugit maxime aut voluptatem explicabo numquam tempora dolore quo, laborum iusto veritatis distinctio doloribus deserunt! Odit!</p>
-             <img src="imagini-site/poza1a.jpg" width="700px" height="500px"  alt="" title="salon">
-             <img src="imagini-site/poza2a.jpg" width="700px" height="500px"  alt="" title="salon">
-             <h3>Make up</h3>
-             <img src="imagini-site/poza3a.jpg" width="700px" height="500px"  alt="" title="make up">
-             <h3>Cosmetica</h3>
-             <img id="imagine-cosmetica" src="imagini-site/poza8a.jpg" width="700px" height="500px" alt="Cosmetica">
-             <img src="imagini-site/poza4a.jpg" width="700px" height="500px"  alt="" title="cosmetica">
-             <h3>Tratament anti riduri</h3>
-             <img src="imagini-site/poza7a.jpg" width="700px" height="500px"  alt="" title="tratament anti riduri">
-             
-             
-        </main>
+    <header>
+        <div class="logo">
+            <h1>Salon Frumusețe</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#despre">Despre Noi</a></li>
+                <li><a href="#servicii">Servicii</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#programari">Programează-te</a></li>
+            </ul>
+        </nav>
+    </header>
 
-     </div>
-    
-       <footer>
+    <section id="despre">
+        <h2>Despre Noi</h2>
+        <p>Bine ai venit la salonul nostru de înfrumusețare! Oferim servicii de makeup profesional, stilizare sprâncene, extensii de gene și multe altele.</p>
+    </section>
 
-       </footer>
+    <section id="servicii">
+        <h2>Servicii</h2>
+        <div class="serviciu">
+            <h3>Makeup Profesional</h3>
+            <p>Transformă-ți look-ul cu ajutorul unui makeup profesionist pentru orice ocazie!</p>
+        </div>
+        <div class="serviciu">
+            <h3>Stilizare Sprâncene</h3>
+            <p>Obține sprâncene perfecte cu tehnicile noastre de stilizare și microblading.</p>
+        </div>
+        <div class="serviciu">
+            <h3>Extensii de Gene</h3>
+            <p>Gene voluminoase și frumoase, care durează săptămâni.</p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Email: contact@salonfrumusete.ro</p>
+        <p>Telefon: 0123 456 789</p>
+        <p>Adresă: Str. Frumuseții, Nr. 10, București</p>
+    </section>
+
+    <section id="programari">
+        <h2>Programează-te</h2>
+        <form id="form-programare">
+            <label for="nume">Nume:</label>
+            <input type="text" id="nume" name="nume" required><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br>
+
+            <label for="serviciu">Alege Serviciul:</label>
+            <select id="serviciu" name="serviciu">
+                <option value="makeup">Makeup Profesional</option>
+                <option value="sprancene">Stilizare Sprâncene</option>
+                <option value="gene">Extensii de Gene</option>
+            </select><br>
+
+            <label for="data">Data:</label>
+            <input type="date" id="data" name="data" required><br>
+
+            <button type="submit">Trimite Programarea</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Salon Frumusețe. Toate drepturile rezervate.</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>

@@ -1,86 +1,126 @@
-html{background: black url(imagini-site/background4a.jpg) center center no-repeat; background-size: cover; color: white;
-
+/* Reset pentru consistență */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-   body{
-    display: block;
-    margin: 1rem;
-    margin-left: 2rem;
-    margin-right: 2rem;
-    place-items: center;
-    font-family: inter, Helvetica, Aria, sans-serif;
-    font-size: 24px;
-    line-height: 1.5em;
 
-    background-color:transparent;
-    padding: 1rem;
-    border-radius: 2rem;
-    font-size: clamp(1rem, 2vw, 2rem);
-    line-height: 1.5em;
+body {
+  font-family: 'Arial', sans-serif;
+  background-image:url("imagini-site/poza2a.jpg") ;
+  color: white;
+}
 
-     }
-     #title{
-      display: block; margin: 0; padding: 0; border-top: 1px solid black;
-     }
-       h1{
-          
-          text-align: center; padding: 0; margin: 0;
-          color: black;
-          text-decoration: none;
-          font-style:italic;
-          }
-       h2{
-      text-align: center; padding: 0; margin: 0;
-      color: black;
-      text-decoration: none;
-      font-style:italic;
-      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva , Verdana, sans-serif;
-       }
-       h3{
-        text-align: center; padding: 0; margin: 0;
-        color: white;
-        text-decoration: none;
-        font-style:italic;
-       }
-        
-      div{
-        color: black;
-        
-        }
-       
+header {
+  background-color: #ff69b4;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
 
-         ul{
-          
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            width: 200px;
-            background-color:transparent;
-               
-            }
-              li{
-                display: block;
-                color: #000;
-                padding: 8px 0 8px 16px;
-                text-decoration: none;
-            }
-            li,a:hover{
-                color: white;
-            }
-            
-          main{
-            display: block; margin: 0; padding: 0; border-top: 1px solid black; 
+header h1 {
+  font-size: 36px;
+}
 
-             }
-              p{
-                color: white;
-              }
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
 
-             #imagine-cosmetica{
-              margin-right: 100px;
+nav ul li {
+  margin: 0 15px;
+}
 
-             }
-            .poze-site{
-             margin: 0;
-             padding: 0;
-             }
-           
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Despre Noi */
+#despre, #servicii, #contact, #programari {
+  background-color: transparent;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 900px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+#despre:hover{
+  background-color: palevioletred;
+}
+
+h2 {
+  margin-bottom: 15px;
+  color: #ff69b4;
+  font-size: 28px;
+}
+
+p {
+  margin-bottom: 15px;
+}
+
+/* Servicii */
+.serviciu {
+  margin-bottom: 20px;
+}
+
+.serviciu h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+#servicii:hover{
+  background-color:palevioletred;
+}
+
+/* contact */
+#contact:hover{
+  background-color: palevioletred;
+}
+/* Form de Programare */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 5px;
+}
+
+input, select {
+  margin-bottom: 15px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  padding: 10px;
+  background-color: #ff69b4;
+  color: white;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #ff85c0;
+}
+
+footer {
+  text-align: center;
+  background-color: #ff69b4;
+  color: white;
+  padding: 10px;
+  margin-top: 20px;
+}
